@@ -919,8 +919,8 @@ align-items: center; */
 .modal-icon {
   position: absolute;
   left: 16px;
-  top: 0;
-  transform: translateY(33%);
+  top: 50%;
+  transform: translateY(-50%);
   margin-top: 0;
   padding-top: 0;
   fill: currentColor;
