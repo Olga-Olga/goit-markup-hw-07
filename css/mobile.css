@@ -540,9 +540,11 @@ padding-bottom: 72px;
 @media screen and (min-width: 428px) { 
   .customers-list {
     gap: 16px;
-
   }
   
+  .container{
+    max-width: 428px;
+  }
   .customer-item {
     width: calc((100% - 16px) / 2);
   }
@@ -735,13 +737,23 @@ flex-wrap: nowrap;
 
 /* FOOTER */
 .footer-wrapper {
-
   align-items: baseline;
   justify-content: space-between;
-
 }
 }
 
+.footer-logo {
+  margin-right: 120px;
 }
+
+.footer-media {
+  margin-right: 80px;
+}
+
+}
+
+
+
+
 
 
