@@ -251,7 +251,7 @@
 }
 
 .team-member-info {
-  padding: 32px 16px;
+  padding: 32px 0px;
 }
 
 .hero-name {
@@ -422,7 +422,7 @@
 }
 
 .hero-item {
-  width: calc((100% - 24px) / 2);
+  /* width: calc((100% - 24px) / 2); */
 }
 
 /* Costomers */
