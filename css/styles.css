@@ -324,7 +324,6 @@ img {
 }
 
 /* ! Section 4 TEAM HERO*/
-
 .hero {
   /* CLOUD */
   background: #f4f4fd;
@@ -445,14 +444,11 @@ img {
 }
 
 .customer-wrapper {
-  /* height: 780px; */
-  /* !QUESTION margin: 120px 156px; */
   margin-left: auto;
   margin-right: auto;
-  /* ! ADDED_IRYNA */
-  width: 1158px;
-  padding-right: 15px;
-  padding-left: 15px;
+  max-width: 1158px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .cust-title {
@@ -476,8 +472,8 @@ img {
 
 .customer-item {
   width: calc((100% - 120px) / 6);
-  height: 88px;
-}
+
+ }
 
 .customer-item-link {
   display: flex;
