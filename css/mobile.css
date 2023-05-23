@@ -372,6 +372,170 @@
   fill: #404bbf;
 }
 
+/* ! Footer */
+
+.footer {
+  background-color: var(--color-navyblue);
+  padding: 101px 0px 100px 0px;
+}
+.footer-wrapper {
+  /* max-width: 768; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.footer .link {
+  display: block;
+  margin-bottom: 16px;
+  text-align: center;
+  margin-right: 0;
+}
+
+.logo-studio-bottom {
+  /* CLOUD */
+  color: var(--color-cloud);
+}
+
+.footer-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-cloud);
+  max-width: 264px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.footer-media-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.02em;
+  /* WHITE */
+  color: #ffffff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.footer-media-link {
+  border: 1px solid var(--color-slate);
+  border-radius: 50%;
+  background: #4d5ae5;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-iris);
+  border-radius: 50%;
+  transition: background-color 250ms var(--time-f-cubic);
+}
+
+.footer-media-link:focus,
+.footer-media-link:hover {
+  background-color: #31d0aa;
+}
+
+.footer-medi-icons-list {
+  display: flex;
+  /* width: 40px; */
+  height: 40px;
+  justify-content: center;
+  gap: 16px;
+  }
+
+.footer-logo {
+margin: 0 auto;
+padding-bottom: 72px;
+}
+
+.footer-media {
+  margin: 0 auto;
+  padding-bottom: 72px;
+}
+
+.footer-media-icons {
+  fill: #f4f4fd;
+}
+
+
+.sbs-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+
+.footer-input {
+  background-color: var(--color-navyblue);
+  color: white;
+  min-width: 400px; 
+  /* margin-right: 24px; */
+  padding: 8px 16px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  
+}
+
+.footer-form-sbs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+}
+
+  .footer-input::placeholder {
+    color: white;
+  }
+
+  .footer-form-btn{
+    display: flex;
+    justify-content: space-around;
+    width: 165px;
+    padding: 8px 24px;  
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    color: white;
+    background-color: #4d5ae5;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms background-color var(--time-f-cubic);
+  }
+
+  .footer-form-btn:hover, .footer-form-btn:focus{
+    background-color:#404bbf;
+    
+  } 
+
+  .submit-icon{
+   fill: white;
+  }
+
+  .logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+  }
+
 
 @media screen and (min-width: 428px) { 
   .customers-list {
@@ -384,10 +548,18 @@
   }
   
 
+    .footer{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 }
 
 @media screen and (min-width: 768px){
+  .footer-input {
+min-width: 100px;
+}
+
   body {
     background-color: #31d0aa;
   }
@@ -438,7 +610,58 @@
   width: calc((100% - 24px*2) / 3);
 }
 
+/* ! Footer */
+
+.footer-wrapper {
+  max-width: 552px;
+  flex-direction: row;
+  align-items: normal;
+  justify-content: start;
 }
+
+.footer-logo {
+  display: block;
+  margin: 0;
+  margin-bottom: 72px;
+  margin-right: 24px;
+}
+
+.footer-media {
+  padding: 0;
+  max-width: 208px;
+  display: block;
+  margin: 0;
+}
+
+.footer-media-title {
+  text-align: left;
+}
+
+.footer-subscribe-block{
+  display: block;
+}
+
+.footer-form-sbs {
+  flex-direction: row;
+  gap: 24px;
+}
+
+.footer-description {
+  width: 264px;
+}
+
+
+.footer-form-sbs{
+  align-items: flex-end;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1158px){
 body {
@@ -510,8 +733,15 @@ flex-wrap: nowrap;
   max-width: 100%;
 }
 
+/* FOOTER */
+.footer-wrapper {
+
+  align-items: baseline;
+  justify-content: space-between;
+
+}
 }
 
-
+}
 
 
