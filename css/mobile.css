@@ -913,18 +913,113 @@ input {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms var(--time-f-cubic), visibility 250ms var(--time-f-cubic);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  padding: 80px 35px 40px;
 }
 
-.mob-menu.is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.mob-menu-close {
+  position: absolute;
+  z-index: 1;
+  height: 36px;
+  width: 36px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+}
+
+.mob-menu-close:focus {
+  background-color: #404bbf;
+  fill: white;
+  border: none;
+}
+
+.mob-menu-icon {
+  stroke: #2e2f42;
+}
+
+.mob-nav-item {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+}
+.mob-nav-link {
+  color: #2e2f42;
+}
+.current-menu-item {
+  color: #404bbf;
+}
+.mob-menu-address {
+  margin-top: auto;
+}
+
+.mob-menu-number {
+  margin-bottom: 40px;
+}
+.mob-contact-number {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #4d5ae5;
+}
+
+.mob-menu-mail {
+  margin-bottom: 48px;
+}
+.mob-contact-mail {
+  color: #434455;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.mob-soc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.soc-media-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.soc-link {
+  background-color: #4d5ae5;
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #f4f4fd;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soc-link:hover,
+.soc-link:focus {
+  background-color: #404bbf;
 }
 
 @media screen and (min-width: 428px) {
