@@ -687,8 +687,8 @@ body {
   transform: translate(-50%, -50%) scale(1);
 
   min-height: 576px;
-  min-width: 400px;
-  width: 408px;
+  /* min-width: 400px; */
+  /* width: 408px; */
   padding: 72px 30px 30px 30px;
   background-color: white;
   border-radius: 4px;
@@ -906,7 +906,7 @@ input {
   background-color: transparent;
   border: none;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .mob-menu {
@@ -1038,6 +1038,10 @@ input {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  .modal {
+  min-width: 400px;
+  width: 408px;
 }
 
 @media screen and (min-width: 768px) {
