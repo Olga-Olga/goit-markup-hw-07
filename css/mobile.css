@@ -652,10 +652,91 @@ body {
 }
 /* FINISH HEADER */
 
+/* Modal Wind */
+/* ! MODAL WINDOW */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 100vw;
+  min-height: 100vh; */
+  width: 100%;
+  height: 100%;
+  /* width: 408px;
+  min-height: 576px; */
+  background-color: rgba(46, 47, 66, 0.4);
+  /* transition: opacity 200ms ease-in-out, visibility 200ms linear; */
+  transition: opacity 250ms var(--time-f-cubic), visibility 250ms var(--time-f-cubic);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* класс утилита  */
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  /* события указателя, на элемент не действуют никакие события, 
+  чтобы элемент не работал, пропускал клики, выделения текста */
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  min-height: 576px;
+  min-width: 400px;
+  width: 408px;
+  padding: 72px 30px 30px 30px;
+  background-color: white;
+  border-radius: 4px;
+  background: #fcfcfc;
+  transition: transform 250ms var(--time-f-cubic);
+  /* transition: background-color 250ms var(--time-f-cubic), border 250ms var(--time-f-cubic);  */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-100%, 200%) scale(0.5);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #2e2f42;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms var(--time-f-cubic), border 250ms var(--time-f-cubic);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  color: #ffffff;
+  border: none;
+  background-color: #404bbf;
+}
+
+.cross-icon {
+  fill: currentColor;
+  width: 8px;
+  height: 8px;
+  transition: fill 250ms var(--time-f-cubic);
+}
+
 /* ! MODAL FORMS HW6 */
-/* .modal-block {
-  margin-top: 34px;
-} */
 
 .modal-title {
   margin: 0px auto 20px;
@@ -817,6 +898,43 @@ input {
   background-color: #404bbf;
 }
 
+/* BURGER MENU */
+.mob-menu-btn {
+  display: block;
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 100vw;
+  min-height: 100vh; */
+  width: 100%;
+  height: 100%;
+  /* width: 408px;
+  min-height: 576px; */
+  background-color: rgba(46, 47, 66, 0.4);
+  /* transition: opacity 200ms ease-in-out, visibility 200ms linear; */
+  transition: opacity 250ms var(--time-f-cubic), visibility 250ms var(--time-f-cubic);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* класс утилита  */
+.mob-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  /* события указателя, на элемент не действуют никакие события, 
+  чтобы элемент не работал, пропускал клики, выделения текста */
+  pointer-events: none;
+}
+
 @media screen and (min-width: 428px) {
   .customers-list {
     gap: 16px;
@@ -954,6 +1072,11 @@ input {
 
   .header-adress {
     display: block;
+  }
+
+  /*  */
+  .mob-menu-btn {
+    display: none;
   }
 }
 
